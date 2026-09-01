@@ -52,7 +52,7 @@
 
     .dmf-header {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 112px;
+      grid-template-columns: 407fr 440fr;
       align-items: center;
       gap: 8px;
       padding: 8px 10px;
@@ -60,7 +60,12 @@
       border-bottom: 3px solid var(--blue);
     }
 
-    .dmf-logo { width: min(100%, 407px); }
+    .dmf-logo { width: 100%; }
+
+    .dmf-head-banner { position: relative; line-height: 0; }
+    .dmf-head-banner img { width: 100%; }
+    .dmf-hb-tel { position: absolute; top: 0; left: 0; width: 80%; height: 100%; }
+    .dmf-hb-pmark { position: absolute; top: 0; right: 0; width: 20%; height: 100%; }
     .dmf-head-contact {
       display: flex;
       min-height: 68px;
@@ -441,8 +446,7 @@
     }
 
     @media (max-width: 370px) {
-      .dmf-header { grid-template-columns: minmax(0, 1fr) 94px; padding-inline: 7px; }
-      .dmf-head-contact { min-height: 60px; }
+      .dmf-header { padding-inline: 7px; }
       .dmf-items { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
@@ -455,7 +459,11 @@
       <a href="https://dmhassou.info/" aria-label="DM発送.net ホーム">
         <img class="dmf-logo" src="./assets/dm-hassou-logo.gif" alt="DM発送.net 今より早く安く簡単に！" width="407" height="112">
       </a>
-      <a class="dmf-head-contact" href="tel:0120499855">お問い合わせ<strong>0120-499-855</strong></a>
+      <div class="dmf-head-banner">
+        <img src="./assets/header-bebrain.gif" alt="株式会社ビーブレイン 平日AM10:00〜PM5:00 24時間365日受付 dm@bebrain.info フリーダイヤル0120-499-855 お急ぎの場合は03-6820-8770 プライバシーマーク19000408" width="440" height="112">
+        <a class="dmf-hb-tel" href="tel:0120499855" aria-label="電話 0120-499-855"></a>
+        <a class="dmf-hb-pmark" href="https://privacymark.jp/" target="_blank" rel="noopener noreferrer" aria-label="プライバシーマーク"></a>
+      </div>
     </header>
 
     <nav class="dmf-nav" aria-label="メインメニュー">

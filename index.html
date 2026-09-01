@@ -122,6 +122,21 @@
       font-weight: 700;
     }
 
+    .dmf-sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .dmf-fv-hero { background: #fff; }
+    .dmf-fv-hero img { width: 100%; }
+
     .dmf-fv {
       padding: 18px 14px 0;
       background: linear-gradient(180deg, #fff 0 60%, #eaf5fb 100%);
@@ -449,19 +464,9 @@
       <span>DM関連作業</span><span>デザイン</span><span>法人リスト</span><span>可変印字</span><span>封入封緘</span><span>手作業</span><span>発送作業</span><span>商品保管</span>
     </div>
 
-    <section class="dmf-fv" aria-labelledby="dmf-title">
-      <ul class="dmf-checks">
-        <li>DM専門店として20年以上・3,000社以上のお取引実績</li>
-        <li>全国10カ所以上の発送センター</li>
-        <li>100名以上のスタッフ</li>
-        <li>DM専門経験アドバイザー5名</li>
-      </ul>
-      <p class="dmf-fv-kicker">DM専門総合商社だから</p>
-      <h1 id="dmf-title">DMの<br>「何とかならないか」を<span>何とかします。</span></h1>
-      <div class="dmf-fv-image">
-        <img src="./assets/original/sp-top-img.jpg" alt="DM専門総合商社だからDMの何とかならないかを何とかします" width="1530" height="700">
-      </div>
-      <p class="dmf-blue-ribbon">DM関連のアレコレやっています。</p>
+    <section class="dmf-fv-hero" aria-labelledby="dmf-title">
+      <h1 id="dmf-title" class="dmf-sr-only">DMの「何とかならないか」を何とかします。DM専門店として20年以上・3,000社以上のお取引実績。</h1>
+      <img src="./assets/fv-hero.png" alt="DM専門店として20年以上・3,000社以上のお取引実績、全国10か所以上の発送センター、100名以上のスタッフ、DM専門経験アドバイザー5名。DM専門総合商社だからDMの「何とかならないか」を何とかします。DM関連のアレコレやっています。" width="941" height="1672">
     </section>
 
     <section class="dmf-contact" aria-label="お問い合わせ">

@@ -384,6 +384,16 @@
     .dmf-about summary::after { position: absolute; top: 50%; right: 13px; content: "+"; font-size: 24px; transform: translateY(-50%); }
     .dmf-about details[open] summary::after { content: "−"; }
     .dmf-about__body { padding: 0 13px 14px; color: #444; font-size: 13px; line-height: 1.8; }
+    .dmf-catalog__items { display: flex; flex-wrap: wrap; gap: 6px; }
+    .dmf-catalog__items span {
+      padding: 6px 10px;
+      color: var(--deep-blue);
+      background: var(--light-blue);
+      border: 1px solid var(--line);
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
     .dmf-about__body p { margin-bottom: 0; }
 
     .dmf-area-groups { display: grid; gap: 14px; }
@@ -469,9 +479,6 @@
       <a href="https://dmhassou.info/%e8%a6%8b%e7%a9%8d%e3%82%82%e3%82%8a/">見積もり</a>
     </nav>
 
-    <div class="dmf-keywords" aria-label="対応サービス">
-      <span>DM関連作業</span><span>デザイン</span><span>法人リスト</span><span>可変印字</span><span>封入封緘</span><span>手作業</span><span>発送作業</span><span>商品保管</span>
-    </div>
 
     <section class="dmf-fv-hero" aria-labelledby="dmf-title">
       <h1 id="dmf-title" class="dmf-sr-only">DMの「何とかならないか」を何とかします。DM専門店として20年以上・3,000社以上のお取引実績。</h1>
@@ -487,6 +494,34 @@
       <a class="dmf-contact__tel" href="tel:0120499855">0120-499-855</a>
       <p class="dmf-contact__urgent">お急ぎの場合は <a href="tel:0368208770">03-6820-8770</a></p>
       <p class="dmf-contact__hours">受付10:00〜17:00（平日のみ）</p>
+    </section>
+
+    <section class="dmf-section dmf-about dmf-catalog" aria-labelledby="dmf-catalog-title">
+      <h2 class="dmf-section-title" id="dmf-catalog-title">DM発送で対応できる業務一覧</h2>
+      <details>
+        <summary>DM関連作業</summary>
+        <div class="dmf-about__body"><div class="dmf-catalog__items">
+          <span>デザイン</span><span>法人リスト抽出</span><span>法人リスト作成</span><span>可変印字</span><span>OPP封筒</span><span>封筒作成</span><span>預かり発送</span><span>商品保管</span><span>データ入力</span><span>手作業</span><span>電話受付</span><span>テレアポ</span>
+        </div></div>
+      </details>
+      <details>
+        <summary>発送作業</summary>
+        <div class="dmf-about__body"><div class="dmf-catalog__items">
+          <span>封入封緘</span><span>宛名印字</span><span>差し込み</span><span>折り作業</span><span>バリアブル印字</span><span>梱包作業</span><span>マッチング</span><span>手作業封入</span><span>ピッキング</span><span>ダイレクト印字</span><span>ラベル印字</span><span>景品封入</span>
+        </div></div>
+      </details>
+      <details>
+        <summary>発送方法＆封入資材</summary>
+        <div class="dmf-about__body"><div class="dmf-catalog__items">
+          <span>運送便</span><span>ゆうメール</span><span>郵便</span><span>ゆうパケット</span><span>ネコポス</span><span>宅配便</span><span>信書発送</span><span>官製はがき投函</span><span>圧着はがき印刷</span><span>折込センター持込</span><span>封筒印刷</span><span>広告割引発送</span>
+        </div></div>
+      </details>
+      <details>
+        <summary>DM種類など</summary>
+        <div class="dmf-about__body"><div class="dmf-catalog__items">
+          <span>A4DM</span><span>封入封緘</span><span>毎日発送</span><span>定型、定形外</span><span>ハガキ</span><span>挨拶状</span><span>請求書</span><span>セミナー案内</span><span>振込案内</span><span>督促状</span><span>案内送付</span><span>資料発送</span>
+        </div></div>
+      </details>
     </section>
 
     <section class="dmf-reasons-intro" aria-label="弊社が選び続けられる理由">
